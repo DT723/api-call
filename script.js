@@ -1,16 +1,25 @@
+const imageResult = document.getElementById('imageResult');
+const button = document.getElementById('button');
+
+button.addEventListener('click', getRandomDog)
+
 
 // **create async function to await Promise, convert data to json
-async function getData() {
+async function getRandomDog() {
     const response = await fetch('https://dog.ceo/api/breeds/image/random')
     const data = await response.json()
+    .then(data => {
+        imageResult.innerHTML = `<img id="image" img src="${data.message}"/>`
+    })
     // console.log(data)
     return data
-    document.getElementById('image').textContent = image;
 }
 
 
-// ***using data outside the function***
-getData().then(data => console.log(data.message))
-    .catch(err => console.log('errors: ' + err.message));
+// // ***using data outside the function***
+// getData().then(data => (data.message))
+//     .catch(err => console.log('errors: ' + err.message));
     
    
+
+

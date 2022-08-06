@@ -1,5 +1,7 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -11,23 +13,47 @@ body {
 
 .container-flex {
     display:flex;
-    flex-direction: row; 
     justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 20px;
+    flex-direction: column;
+    
 }
 
 .image-container, .button-container {
-    display: flex;
-    justify-content: center;
+    width: 400px;
+    height: 450px;
+    margin-top: 20px;
+    
 }
 
 #image {
-    width: 350px;
-    height: 350px; 
+    object-fit: cover;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 450px;
 }
 
 #button {
-    width: 100px;
+    display: flex;
+    width: 400px;
     height: 40px;
-    font-size: 20px;
-    margin: 20px;
+    font-size: 25px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#button:active {
+    transform: scale(0.98);
+    -webkit-transform: scale(0.98);
+    -moz-transform: scale(0.98);
+    -ms-transform: scale(0.98);
+    -o-transform: scale(0.98);
+}
+
+#button:focus {
+    outline: none;
 }
