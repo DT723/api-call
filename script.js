@@ -23,12 +23,14 @@ async function getRandomDog() {
 }
 
 async function getRandomFox() {
-  const response = await fetch("https://randomfox.ca/?i=120");
-  const data = await response.json().then((data) => {
-    console.log(data);
-    imageResult1.innerHTML = `<img id="image1" img src="${data.link}"/>`;
-  });
-
+  const response = await fetch("https://randomfox.ca/floof/");
+  const data = await response
+    .json()
+    .then((data1) => data1["image"])
+    .then((data2) => {
+      console.log(data2);
+      imageResult1.innerHTML = `<img id="image1" img src="${data2}" />`;
+    });
   return data;
 }
 
