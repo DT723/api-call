@@ -1,6 +1,6 @@
-# API call with Async Await
+# API call with Fetch, Async, Await
 # Using html, css, js
-# Using the dog api - random dog images
+# 3 API's for randome dog, cat and fox images
 # retrieve data
 # manipulate data
 # display data to browser
