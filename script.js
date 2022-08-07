@@ -21,11 +21,12 @@ async function getRandomDog() {
 
   return data;
 }
+
 async function getRandomFox() {
-  const response = await fetch("https://randomfox.ca/images/55.jpg");
+  const response = await fetch("https://randomfox.ca/?i=120");
   const data = await response.json().then((data) => {
     console.log(data);
-    imageResult1.innerHTML = `<img id="image1" img src="${data.message}"/>`;
+    imageResult1.innerHTML = `<img id="image1" img src="${data.link}"/>`;
   });
 
   return data;
@@ -40,7 +41,3 @@ async function getRandomCat() {
 
   return data;
 }
-
-// // ***using data outside the function***
-// getData().then(data => (data.message))
-//     .catch(err => console.log('errors: ' + err.message));
