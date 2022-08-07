@@ -1,68 +1,78 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    margin: 0;
-    font-family: "Lato", sans-serif;
-    font-size: 20px;
-    width: 100%;
-    background-color: aqua;
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  width: 100%;
+  background-color: hsl(120, 5%, 89%);
 }
 
-.container{
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin: 20px; 
-    
+.container {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 30px;
 }
 
-.grid-columns{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    margin-top: 30px;
+.grid-columns {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 30px;
+  justify-items: center;
 }
 
-.image-container, .image-container1, .image-container2 {
-    width: 400px;
-    height: 450px;
-    background-color: white;
+.image-container,
+.image-container1,
+.image-container2 {
+  width: 400px;
+  height: 450px;
+  background-color: white;
 }
 
-.button-container, .button-container1, .button-container2 {
-    width: 400px; 
-    
+.button-container,
+.button-container1,
+.button-container2 {
+  width: 400px;
 }
 
-#image, #image1, #image2 {
-    object-fit: cover;
-    justify-content: center;
-    align-items: center;
-    width: 400px;
-    height: 450px;
-    
+#image,
+#image1,
+#image2 {
+  object-fit: cover;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 450px;
 }
 
-#button, #button1, #button2 {
-    width: 400px;
-    height: 40px;
-    font-size: 25px;
-    justify-content: center;
-    align-items: center;
-    margin-top: 10px;
+#button,
+#button1,
+#button2 {
+  width: 400px;
+  height: 40px;
+  font-size: 25px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
 }
 
-#button:active, #button1:active, #button2:active {
-    transform: scale(0.98);
-    -webkit-transform: scale(0.98);
-    -moz-transform: scale(0.98);
-    -ms-transform: scale(0.98);
-    -o-transform: scale(0.98);
+#button:active,
+#button1:active,
+#button2:active {
+  transform: scale(0.98);
+  -webkit-transform: scale(0.98);
+  -moz-transform: scale(0.98);
+  -ms-transform: scale(0.98);
+  -o-transform: scale(0.98);
 }
 
-#button:focus, #button1:focus, #button2:focus {
-    outline: none;
+#button:focus,
+#button1:focus,
+#button2:focus {
+  outline: none;
 }
